@@ -81,8 +81,11 @@ int main()
 	cout << "short max = " << SHRT_MAX << "\n";
 	cout << "int  min = " << INT_MIN  << "\n";
 
+	int estouro = INT_MAX + 1; 
+    cout << "Valor de INT_MAX + 1 : " << estouro << endl << endl;
+
 	long seconds_input = 0;
-	
+
 	cout << "Digite um numero em segundos: ";
     cin >> seconds_input;
 

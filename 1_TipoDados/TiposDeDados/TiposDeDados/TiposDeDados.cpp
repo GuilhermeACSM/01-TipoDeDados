@@ -1,6 +1,7 @@
 // TiposDeDados.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <climits>
 #include <iostream>
 using namespace std;
 
@@ -74,9 +75,34 @@ int main()
 	cout << "Sua idade em minutos e: " << minutos << endl;
 	cout << "Sua idade em segundos e: " << segundos << endl;
 
+	cout << "\nLimites Numericos\n";
+    cout << "=================\n";
+	cout << "int  max = " << INT_MAX  << "\n";
+	cout << "short max = " << SHRT_MAX << "\n";
+	cout << "int  min = " << INT_MIN  << "\n";
+
+	long seconds_input = 0;
+	
+	cout << "Digite um numero em segundos: ";
+    cin >> seconds_input;
+
+    long days = seconds_input / 86400; 
+    seconds_input = seconds_input % 86400; 
+
+    long hour = seconds_input / 3600;
+    seconds_input = seconds_input % 3600;
+
+    long mins = seconds_input / 60;
+    long rest_second = seconds_input % 60;
+
+    cout << "\n--- Resultado ---" << endl;
+    cout << "Dias: " << days << endl;
+    cout << "Horas: " << hour << endl;
+    cout << "Minutos: " << mins << endl;
+    cout << "Segundos: " << rest_second << endl << endl;
+	
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
-
-
+	system("cls");
 }
 

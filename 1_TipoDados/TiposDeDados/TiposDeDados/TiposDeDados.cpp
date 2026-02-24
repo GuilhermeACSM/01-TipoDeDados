@@ -82,7 +82,7 @@ int main()
 	cout << "int  min = " << INT_MIN  << "\n";
 
 	int estouro = INT_MAX + 1; 
-    cout << "Valor de INT_MAX + 1 : " << estouro << endl << endl;
+    cout << "Valor de INT_MAX + 1 : " << estouro << endl;
 
 	long seconds_input = 0;
 
